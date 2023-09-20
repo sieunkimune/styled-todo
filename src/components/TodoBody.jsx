@@ -6,6 +6,7 @@ const Section = styled.section`
 	position: relative;
 	width: 100%;
 	height: 600px;
+	background-color: #e2988b;
 	border: 1px solid #6e2e09;
 	box-sizing: border-box;
 `;

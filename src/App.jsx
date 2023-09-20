@@ -29,7 +29,7 @@ const TodoPlus = styled.button`
 	height: 48px;
 	color: #fff;
 	font-size: 32px;
-	background-color: #b1260e;
+	background-color: #e28c7d;
 	border: none;
 	border-radius: 50px;
 	transform: translate(-50%, 50%);

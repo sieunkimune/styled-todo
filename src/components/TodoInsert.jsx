@@ -46,7 +46,7 @@ const TodoInsert = ({ fnAdd, active, $plan }) => {
 				ref={$plan}
 				type="text"
 				id="plan"
-				placeholder="할 일을 입력 후 엔터키를 누르세먀옹ᓚᘏᗢ"
+				placeholder="할 일을 입력 후 엔터키를 눌러주세요!🍮🍒"
 				autoComplete="off"
 				autoFocus
 				value={plan}
