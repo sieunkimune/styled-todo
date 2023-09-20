@@ -4,6 +4,7 @@ import TodoHead from './components/TodoHead';
 import TodoBody from './components/TodoBody';
 import TodoList from './components/TodoList';
 import TodoInsert from './components/TodoInsert';
+import { useEffect } from 'react';
 
 const GlobalStyle = createGlobalStyle`
 *{margin: 0;padding: 0;}
@@ -48,9 +49,15 @@ const initialData = [
 	{ id: 3, title: '요금제 변경', done: true },
 ];
 
+const defaultState = JSON.parse(localStorage['styled-todo'] || JSON.stringify(initialData));
+
 const App = () => {
-	const [todos, setTodos] = useState(initialData);
+	const [todos, setTodos] = useState(defaultState);
 	const nextId = useRef(4);
+
+	useEffect(() => {
+		localStorage['styled-todo'] = JSON.stringify(todos);
+	}, [todos]);
 
 	//데이터 추가함수
 	const fnAdd = (plan) => {
